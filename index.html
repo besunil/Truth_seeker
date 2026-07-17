@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REPLACE: site title + description -->
+  <title>Your Name — Essays</title>
+  <meta name="description" content="Essays on thinking, reading, work, and craft — by Your Name.">
+  <meta property="og:title" content="Your Name — Essays">
+  <meta property="og:description" content="Essays on thinking, reading, work, and craft.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="Essays" href="rss.xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-head">
+    <div class="site-head__inner">
+      <!-- REPLACE: your name -->
+      <a class="brand" href="index.html">Your Name</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Essays</a>
+        <a href="reading.html">Reading</a>
+        <a href="about.html">About</a>
+        <a href="#" data-random title="Read a random essay">Random</a>
+        <button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <!-- REPLACE: your one-paragraph introduction -->
+    <p class="lede">
+      I write essays about thinking, reading, work, and craft — the slow ideas
+      that only reveal themselves on paper. New essays a few times a year,
+      when there is something worth saying.
+      <a href="about.html">More about me →</a>
+    </p>
+
+    <div class="tools">
+      <div class="search">
+        <input id="search" type="search" placeholder="Search essays…" aria-label="Search essays" autocomplete="off">
+        <kbd>/</kbd>
+      </div>
+      <div class="tags" id="tags" role="group" aria-label="Filter by topic"></div>
+    </div>
+
+    <div id="essay-list" aria-live="polite"></div>
+
+    <section class="subscribe">
+      <h2>Get new essays by email</h2>
+      <p>No schedule, no noise. An essay, when one exists, and nothing else.</p>
+      <form data-subscribe novalidate>
+        <input type="email" placeholder="you@example.com" aria-label="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="form-note" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot__inner">
+      <span>© <span data-year></span> Your Name</span>
+      <nav aria-label="Footer">
+        <a href="rss.xml">RSS</a>
+        <!-- REPLACE: your social links -->
+        <a href="https://x.com/" rel="me">X</a>
+        <a href="mailto:you@example.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/essays.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
